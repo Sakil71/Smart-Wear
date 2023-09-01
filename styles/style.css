@@ -30,6 +30,7 @@ font-family: 'Rufina', serif; */
 
 a {
     text-decoration: none;
+    color: black;
 }
 
 h1 {
@@ -102,13 +103,13 @@ header {
 }
 
 /* --------------Best Selling ---------------- */
-.best-container {
+.container {
     margin-bottom: 150px;
     display: flex;
     justify-content: center;
 }
 
-.best-container>div {
+.container>div {
     width: 90%;
     text-align: center;
 }
@@ -117,18 +118,19 @@ header {
     text-align: center;
 }
 
-.best-selling-products {
+.products {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     column-gap: 30px;
     margin-bottom: 40px;
 }
 
-.best-selling-product {
+.product {
     text-align: center;
+    box-shadow: rgba(0, 0, 0, 0.1) 0 5px 5px;
 }
 
-.best-selling-product img {
+.product img {
     width: 100%;
     border-radius: 2px;
 }
@@ -140,4 +142,33 @@ header {
 
 .fa-star {
     color: #F5D426;
+}
+
+/* ----------- Our Products -------------- */
+
+.our-products-header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.our-products-header a {
+    margin: 30px;
+}
+
+.our-products-header a:hover {
+    color: #224F34;
+    font-weight: 700;
+}
+
+.our-products-header a:focus {
+    border-bottom: 2px solid #224F34;
+    color: #224F34;
+    font-weight: 700;
+}
+
+.our-products {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+    margin-bottom: 40px;
 }
