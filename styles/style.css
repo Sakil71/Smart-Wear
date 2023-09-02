@@ -33,6 +33,10 @@ a {
     color: black;
 }
 
+p:hover {
+    color: black;
+}
+
 h1 {
     color: #1b5432;
     font-size: 30px;
@@ -66,7 +70,6 @@ header {
 }
 
 .nav-container a {
-    text-decoration: none;
     margin-left: 20px;
     color: #224F34;
 }
@@ -74,6 +77,16 @@ header {
 .nav-container h1 {
     color: #103a21;
     font-family: 'Roboto', sans-serif;
+}
+
+.nav-text a:focus {
+    border-bottom: 2px solid #103a21;
+
+}
+
+.login {
+    display: flex;
+    align-items: center;
 }
 
 /*---------------- Banner -------------------- */
@@ -105,6 +118,7 @@ header {
 }
 
 /* --------------Best Selling ---------------- */
+
 .container {
     margin-bottom: 150px;
     display: flex;
@@ -214,4 +228,40 @@ header {
     border-radius: 20px;
     top: 100px;
     left: 400px;
+}
+
+/* ------------ Feedback Corner ----------- */
+
+.feedback-corner {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 20px;
+    margin-bottom: 50px;
+}
+
+.feedback-corner>div {
+    box-shadow: rgba(0, 0, 0, 0.1) 0 0 3px;
+    padding: 20px;
+    text-align: start;
+    border-radius: 2px;
+}
+
+.feedback-corner div:hover {
+    background-color: #C2EFD4;
+}
+
+.arrow-button {
+    display: flex;
+    justify-content: center;
+    column-gap: 50px;
+}
+
+.arrow-button a {
+    background-color: #f3f6f7;
+    padding: 10px 20px;
+    border-radius: 2px;
+}
+
+.arrow-button a:focus {
+    background-color: #C2EFD4;
 }
